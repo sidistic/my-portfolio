@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
 
@@ -16,12 +16,12 @@
     <div class="nav-inner">
       <div class="nav-logo">
         <span class="logo-label">EMPLOYEE//</span>
-        <a href="/" class="logo-name">{{ site.name }}</a>
+        <a href="{{ '/' | url }}" class="logo-name">{{ site.name }}</a>
       </div>
       <ul class="nav-links">
-        <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>OVERVIEW</a></li>
-        <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>PERSONNEL</a></li>
-        <li><a href="/blog/" {% if "/blog/" in page.url %}aria-current="page"{% endif %}>REPORTS</a></li>
+        <li><a href="{{ '/' | url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>OVERVIEW</a></li>
+        <li><a href="{{ '/about/' | url }}" {% if page.url == "/about/" %}aria-current="page"{% endif %}>PERSONNEL</a></li>
+        <li><a href="{{ '/blog/' | url }}" {% if "/blog/" in page.url %}aria-current="page"{% endif %}>REPORTS</a></li>
       </ul>
     </div>
   </nav>

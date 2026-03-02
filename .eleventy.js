@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
     },
     // Change pathPrefix if deploying to a GitHub Pages project repo
     // e.g. "/my-portfolio/" for username.github.io/my-portfolio
-    pathPrefix: "/",
+    pathPrefix: "/my-portfolio/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };

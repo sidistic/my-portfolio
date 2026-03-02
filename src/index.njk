@@ -33,8 +33,8 @@ title: "Home"
     <p class="hero-bio">{{ site.bio }}</p>
 
     <div class="hero-actions">
-      <a href="/blog/" class="btn">VIEW REPORTS</a>
-      <a href="/about/" class="btn btn-ghost">PERSONNEL FILE</a>
+      <a href="{{ '/blog/' | url }}" class="btn">VIEW REPORTS</a>
+      <a href="{{ '/about/' | url }}" class="btn btn-ghost">PERSONNEL FILE</a>
       {% if site.github %}
       <a href="{{ site.github }}" class="btn btn-ghost" target="_blank" rel="noopener">GITHUB →</a>
       {% endif %}
@@ -175,7 +175,7 @@ title: "Home"
       <article class="post-item">
         <div class="post-date-col">{{ post.date | dateCode }}</div>
         <div class="post-content-col">
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
           {% if post.data.description %}
           <p>{{ post.data.description }}</p>
           {% endif %}
@@ -183,7 +183,7 @@ title: "Home"
       </article>
       {% endfor %}
     </div>
-    <a href="/blog/" class="section-link">VIEW ALL REPORTS →</a>
+    <a href="{{ '/blog/' | url }}" class="section-link">VIEW ALL REPORTS →</a>
     {% else %}
     <p class="text-dim">// NO REPORTS ON FILE YET.</p>
     {% endif %}

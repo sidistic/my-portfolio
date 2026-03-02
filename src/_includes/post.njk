@@ -5,7 +5,7 @@ layout: base.njk
   <header class="post-header">
     <div class="container">
       <div class="post-eyebrow">
-        <a href="/blog/">← REPORTS</a>
+        <a href="{{ '/blog/' | url }}">← REPORTS</a>
         <span class="sep">//</span>
         <span>{{ page.date | isoDate }}</span>
       </div>
@@ -32,7 +32,7 @@ layout: base.njk
       {{ content | safe }}
     </div>
     <div class="post-footer">
-      <a href="/blog/" class="btn btn-ghost">← BACK TO REPORTS</a>
+      <a href="{{ '/blog/' | url }}" class="btn btn-ghost">← BACK TO REPORTS</a>
     </div>
   </div>
 </article>
