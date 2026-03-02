@@ -1,0 +1,282 @@
+---
+layout: base.njk
+title: "Personnel File"
+description: "ML Engineer. NYU MS CS. IIT Dharwad B.Tech. Background in LLM systems, distributed data, and full-stack engineering."
+---
+<div class="container">
+
+  <header class="page-header">
+    <div class="section-label">// PERSONNEL FILE</div>
+    <h1>About</h1>
+    <p class="hero-bio">Extended background and capabilities assessment.</p>
+  </header>
+
+  <div class="about-grid">
+
+    <!-- ── Sidebar ───────────────────────────── -->
+    <aside class="about-sidebar">
+      <div class="sidebar-field">
+        <span class="field-label">NAME</span>
+        <span class="field-value">{{ site.name }}</span>
+      </div>
+      <div class="sidebar-field">
+        <span class="field-label">ROLE</span>
+        <span class="field-value">{{ site.role }}</span>
+      </div>
+      <div class="sidebar-field">
+        <span class="field-label">LOCATION</span>
+        <span class="field-value">{{ site.location }}</span>
+      </div>
+      <div class="sidebar-field">
+        <span class="field-label">STATUS</span>
+        <span class="field-value accent">ACTIVE @ MSFT</span>
+      </div>
+      <div class="sidebar-field">
+        <span class="field-label">EMAIL</span>
+        <a href="mailto:{{ site.authorEmail }}" class="field-value link">WRITE →</a>
+      </div>
+      {% if site.phone %}
+      <div class="sidebar-field">
+        <span class="field-label">PHONE</span>
+        <span class="field-value">{{ site.phone }}</span>
+      </div>
+      {% endif %}
+      {% if site.github %}
+      <div class="sidebar-field">
+        <span class="field-label">GITHUB</span>
+        <a href="{{ site.github }}" class="field-value link" target="_blank" rel="noopener">PROFILE →</a>
+      </div>
+      {% endif %}
+    </aside>
+
+    <!-- ── Main Content ───────────────────────── -->
+    <div class="about-content">
+
+      <!-- Bio -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-label">// BACKGROUND</span>
+          <h2>Bio</h2>
+        </div>
+        <div class="about-bio">
+          <p>I build AI systems that work in production. Currently at Abbott as an AI Engineer.</p>
+          <p>My background spans both research and engineering — MS in Computer Science from NYU where I focused on ML algorithms, and a B.Tech from IIT Dharwad with a specialization in Machine Learning. I've worked across the stack: distributed systems at Arista Networks, full-stack APIs at Upsilon Payments, and teaching graduate-level ML at NYU.</p>
+          <p>Particularly interested in the intersection of LLMs and reliable systems engineering — making models work at the infrastructure level, not just in notebooks.</p>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- Education -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-label">// ACADEMIC RECORD</span>
+          <h2>Education</h2>
+        </div>
+        <div class="posts-list">
+
+          <article class="post-item">
+            <div class="post-date-col">2021—2023</div>
+            <div class="post-content-col">
+              <h3>New York University <span class="role-company">// NEW YORK</span></h3>
+              <p class="edu-degree">Master of Science, Computer Science</p>
+              <ul class="exp-bullets">
+                <li>Research in Machine Learning algorithms</li>
+                <li>GPA: 3.74 / 4.0</li>
+                <li>Teaching Assistant — Graduate Level Machine Learning (2022)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">2016—2020</div>
+            <div class="post-content-col">
+              <h3>IIT Dharwad <span class="role-company">// INDIA</span></h3>
+              <p class="edu-degree">B.Tech, Computer Science &amp; Engineering</p>
+              <ul class="exp-bullets">
+                <li>Specialization in Machine Learning</li>
+                <li>GPA: 8.8 / 10</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- Experience -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-label">// OPERATIONAL HISTORY</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="posts-list">
+
+          <article class="post-item">
+            <div class="post-date-col">DEC 2025—NOW</div>
+            <div class="post-content-col">
+              <h3>AI Engineer <span class="role-company">// Abbott </span></h3>
+              <span class="role-badge">FTE</span>
+              <ul class="exp-bullets">
+                 <li>Working on Models and infrastructure for LibreAssist</li>
+              
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">OCT 2023—OCT 2025</div>
+            <div class="post-content-col">
+              <h3>Machine Learning Engineer <span class="role-company">// MICROSOFT</span></h3>
+              <ul class="exp-bullets">
+                <li>Developed a Multi-Agent data analysis and visualization tool; optimized GPT token usage by 18%.</li>
+                <li>Programmed rich tree, graph, and data visuals to research and develop LLM and ML applications.</li>
+                <li>Designed a semi-autonomous Telemetry AI agent (Azure Cosmos DB + Stream Analytics + Service Bus) with auto-scaling handling 100 GB+ daily traffic.</li>
+                <li>Automated data analysis steps to build tables, speeding up time-to-report by 80%.</li>
+                <li>Built an ML-driven error analysis system to diagnose failures, speeding up debugging by 15%.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">JUN—OCT 2023</div>
+            <div class="post-content-col">
+              <h3>Full Stack Engineer <span class="role-company">// UPSILON PAYMENTS</span></h3>
+              <ul class="exp-bullets">
+                <li>Engineered C#/.NET and Node.js APIs with secure messaging and efficient data flows.</li>
+                <li>Ensured low-latency, high-throughput patterns for production-grade backend services.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">JAN—DEC 2022</div>
+            <div class="post-content-col">
+              <h3>Teaching Assistant — Graduate ML <span class="role-company">// NYU</span></h3>
+              <ul class="exp-bullets">
+                <li>Mentored 80 students through labs on deep learning, NLP, and statistical pattern recognition.</li>
+                <li>Created PyTorch/TensorFlow assignments emphasizing production deployment practices.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">AUG—DEC 2020</div>
+            <div class="post-content-col">
+              <h3>Junior Full Stack Developer <span class="role-company">// FACTRI.AI</span></h3>
+              <ul class="exp-bullets">
+                <li>Developed RESTful APIs, optimizing SQL storage (5% reduction) and upload speed (10s → 3s).</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">MAY—JUL 2019</div>
+            <div class="post-content-col">
+              <h3>Machine Learning Engineer <span class="role-company">// ARISTA NETWORKS</span></h3>
+              <span class="role-badge">INTERN</span>
+              <ul class="exp-bullets">
+                <li>Built a Golang root-cause analysis engine using graph traversal and rule reasoning; slashed diagnosis time from 10 min → 5 s across 100K datapoints.</li>
+                <li>Deployed Spark jobs for large-scale log ingestion and model training on Hadoop clusters.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post-item">
+            <div class="post-date-col">DEC 2017—APR 2020</div>
+            <div class="post-content-col">
+              <h3>Project Lead, Software Dev <span class="role-company">// IIT DHARWAD WEB</span></h3>
+              <ul class="exp-bullets">
+                <li>Developed a PHP web app for campus resource management; led an agile team managing feedback, tasks, and timelines.</li>
+                <li>Optimized database design and UI, reducing size by 14% and increasing user adoption.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- Skills -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-label">// CAPABILITIES</span>
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-list">
+
+          <div class="skill-category">
+            <div class="skill-category-name">ML &amp; NLP</div>
+            <div class="skill-items">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">vLLM</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Autogen</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-name">DATA &amp; DISTRIBUTED</div>
+            <div class="skill-items">
+              <span class="tag">Spark</span>
+              <span class="tag">Hadoop</span>
+              <span class="tag">Apache Iceberg</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">MLflow</span>
+              <span class="tag">Hive</span>
+              <span class="tag">Azure Data Lake</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-name">MLOPS &amp; CI/CD</div>
+            <div class="skill-items">
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">TensorRT</span>
+              <span class="tag">ONNX</span>
+              <span class="tag">Semantic Kernel</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-name">CLOUD &amp; DATA</div>
+            <div class="skill-items">
+              <span class="tag">Azure</span>
+              <span class="tag">AWS EC2/EKS</span>
+              <span class="tag">GCP</span>
+              <span class="tag">Cosmos DB</span>
+              <span class="tag">Service Bus</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-name">LANGUAGES</div>
+            <div class="skill-items">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">Go</span>
+              <span class="tag">C#</span>
+              <span class="tag">TypeScript/JS</span>
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Swift</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Shell</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,192 @@
+---
+layout: base.njk
+title: "Home"
+---
+<div class="container">
+
+  <!-- ── Hero ─────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-eyebrow">
+      <span class="status-dot"></span>EMPLOYEE FILE LOADED // SECTOR: PERSONAL
+    </div>
+    <h1>{{ site.name }}<span class="cursor">_</span></h1>
+
+    <div class="hero-fields">
+      <div class="hero-field">
+        <span class="field-label">DESIGNATION</span>
+        <span class="field-value">{{ site.role }}</span>
+      </div>
+      <div class="hero-field">
+        <span class="field-label">SECTOR</span>
+        <span class="field-value">{{ site.sector }}</span>
+      </div>
+      <div class="hero-field">
+        <span class="field-label">LOCATION</span>
+        <span class="field-value">{{ site.location }}</span>
+      </div>
+      <div class="hero-field">
+        <span class="field-label">STATUS</span>
+        <span class="field-value accent">ACTIVE</span>
+      </div>
+    </div>
+
+    <p class="hero-bio">{{ site.bio }}</p>
+
+    <div class="hero-actions">
+      <a href="/blog/" class="btn">VIEW REPORTS</a>
+      <a href="/about/" class="btn btn-ghost">PERSONNEL FILE</a>
+      {% if site.github %}
+      <a href="{{ site.github }}" class="btn btn-ghost" target="_blank" rel="noopener">GITHUB →</a>
+      {% endif %}
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Projects ──────────────────────────────── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-label">// ACTIVE CASES</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #001</span>
+          <span class="card-status">ACTIVE</span>
+        </div>
+        <h3>AI Knowledge Graph &amp; Semantic Search</h3>
+        <p>Developer tool for building and visualizing AI knowledge graphs with RAG pipelines, semantic retrieval, and agent-based graph construction.</p>
+        <div class="card-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Embeddings</span>
+          <span class="tag">AI Agents</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #002</span>
+          <span class="card-status">ACTIVE</span>
+        </div>
+        <h3>High Performance GitHub Crawler</h3>
+        <p>Parallel crawler processing 100K data points in 7.5 minutes using GraphQL, automated CI/CD pipelines, and post-training data workflows.</p>
+        <div class="card-tags">
+          <span class="tag">GraphQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Parallelization</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #003</span>
+          <span class="card-status">ACTIVE</span>
+        </div>
+        <h3>Shakespearean Text Generation</h3>
+        <p>Generative AI model trained on Lambda GPUs to produce Shakespearean prose using LLM fine-tuning and hyperparameter optimization.</p>
+        <div class="card-tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Transformers</span>
+          <span class="tag">NLP</span>
+          <span class="tag">LLMs</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #004</span>
+          <span class="card-status inactive">ARCHIVED</span>
+        </div>
+        <h3>Atari Breakout RL Agent</h3>
+        <p>Deep reinforcement learning agent trained to play Atari Breakout using policy gradient methods and OpenAI Gym environments.</p>
+        <div class="card-tags">
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">OpenAI Gym</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #005</span>
+          <span class="card-status inactive">ARCHIVED</span>
+        </div>
+        <h3>Distributed RAFT Social Platform</h3>
+        <p>Christmas wish-list social media app built on the RAFT consensus algorithm for fault-tolerant distributed state management.</p>
+        <div class="card-tags">
+          <span class="tag">GoLang</span>
+          <span class="tag">gRPC</span>
+          <span class="tag">RAFT</span>
+          <span class="tag">Protobuf</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-header">
+          <span class="card-id">FILE #006</span>
+          <span class="card-status research">RESEARCH</span>
+        </div>
+        <h3>JL Lemma in Hyperbolic Spaces</h3>
+        <p>Research paper applying the Johnson–Lindenstrauss dimensionality reduction lemma to graph embeddings in hyperbolic spaces.</p>
+        <div class="card-tags">
+          <span class="tag">ML Research</span>
+          <span class="tag">Linear Algebra</span>
+          <span class="tag">Graph Embeddings</span>
+        </div>
+        <div class="card-footer">
+          <a href="{{ site.github }}" class="card-link secondary" target="_blank" rel="noopener">SOURCE →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Recent Posts ───────────────────────────── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-label">// OUTIE REPORTS</span>
+      <h2>Recent Writing</h2>
+    </div>
+
+    {% if collections.posts.length %}
+    <div class="posts-list">
+      {% for post in collections.posts | reverse | limit(3) %}
+      <article class="post-item">
+        <div class="post-date-col">{{ post.date | dateCode }}</div>
+        <div class="post-content-col">
+          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          {% if post.data.description %}
+          <p>{{ post.data.description }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <a href="/blog/" class="section-link">VIEW ALL REPORTS →</a>
+    {% else %}
+    <p class="text-dim">// NO REPORTS ON FILE YET.</p>
+    {% endif %}
+  </section>
+
+</div>

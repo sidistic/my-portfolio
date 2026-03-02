@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title and title != "Home" %}{{ title }} // {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.bio }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-label">EMPLOYEE//</span>
+        <a href="/" class="logo-name">{{ site.name }}</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>OVERVIEW</a></li>
+        <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>PERSONNEL</a></li>
+        <li><a href="/blog/" {% if "/blog/" in page.url %}aria-current="page"{% endif %}>REPORTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>{{ site.name }}</span>
+      <span class="sep">//</span>
+      <span>BUILT WITH ELEVENTY</span>
+      <span class="sep">//</span>
+      <span>ALL RECORDS PUBLIC</span>
+    </div>
+  </footer>
+
+</body>
+</html>

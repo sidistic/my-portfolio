@@ -1,0 +1,38 @@
+---
+layout: base.njk
+---
+<article>
+  <header class="post-header">
+    <div class="container">
+      <div class="post-eyebrow">
+        <a href="/blog/">← REPORTS</a>
+        <span class="sep">//</span>
+        <span>{{ page.date | isoDate }}</span>
+      </div>
+      <h1>{{ title }}</h1>
+      {% if description %}
+      <p class="post-desc">{{ description }}</p>
+      {% endif %}
+      <div class="post-header-meta">
+        <span class="field-label">FILE DATE</span>
+        <span>{{ page.date | readableDate }}</span>
+        {% if tags %}
+        <div class="post-tags">
+          {% for tag in tags %}
+          {% if tag != "posts" %}<span class="tag">{{ tag }}</span>{% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+    <div class="post-footer">
+      <a href="/blog/" class="btn btn-ghost">← BACK TO REPORTS</a>
+    </div>
+  </div>
+</article>
